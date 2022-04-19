@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   color: #725c5c;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .fullpage {
@@ -16,7 +16,7 @@ SIDEBAR
 **************/
 
 .sidebar {
-  box-shadow: 0px 0px 10px 0px #0000003d;
+  box-shadow: 0rem 0rem 0.625rem 0rem #0000003d;
   z-index: 1;
 }
 
@@ -28,13 +28,13 @@ SIDEBAR
 
 .sidebar-main p {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
   background-image: linear-gradient(
     rgba(255, 179, 84, 1),
     rgba(238, 122, 58, 1)
   );
-  padding: 15.5px 24.5px;
+  padding: 0.97rem 1.51rem;
 }
 
 .sidebar-options {
@@ -43,11 +43,11 @@ SIDEBAR
 }
 
 .sidebar-options a {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 24px;
+  padding-top: 0.44rem;
+  padding-bottom: 0.44rem;
+  padding-left: 1.5rem;
   font-family: "Quicksand", sans-serif;
-  font-size: 15px;
+  font-size: 0.94rem;
   font-weight: 500;
   text-decoration: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.089);
@@ -69,20 +69,24 @@ NAVIGATION
   display: flex;
   justify-content: space-between;
   background: #fdf1eb;
-  padding: 3.5px 0;
-  padding-left: 36px;
+  padding: 0.22rem 0;
+  padding-left: 2.25rem;
 }
 
 .navigation-left h3 {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
+}
+
+.navigation-left p {
+  font-size: 0.875rem;
 }
 
 .navigation-right {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 1.38rem;
 }
 
 .navigation-right button {
@@ -90,19 +94,20 @@ NAVIGATION
   align-items: center;
   background: #fdf1eb;
   border: 1px solid rgba(0, 0, 0, 0.089);
-  padding: 5px 9px;
-  border-radius: 3px;
+  padding: 0.32rem 0.57rem;
+  border-radius: 0.19rem;
   cursor: pointer;
 }
 
 .navigation-right span {
   color: #333333;
   font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
 }
 
 .user-info {
   display: flex;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .user-info-text {
@@ -118,7 +123,7 @@ NAVIGATION
 }
 
 .email {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #333333;
   font-family: "Quicksand", sans-serif;
 }
@@ -129,20 +134,20 @@ NAVIGATION
 
 .profile-pic img {
   border-radius: 50%;
-  margin-right: 29px;
-  height: 30px;
+  margin-right: 1.82rem;
+  height: 1.875rem;
 }
 
 .notifications {
   position: absolute;
   color: #fff;
   background: #f85959;
-  font-size: 10px;
-  font-weight: 700px;
+  font-size: 0.625rem;
+  font-weight: 700;
   top: 0%;
   right: 45%;
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
 }
 
@@ -151,8 +156,8 @@ MAINBAR
 **************/
 
 .mainbar {
-  margin: 0 45px;
-  max-width: 1040px;
+  margin: 0 2.8rem;
+  max-width: 65rem;
 }
 
 /**************
@@ -160,10 +165,10 @@ MAIN CONTENT
 **************/
 
 .main-content {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
   display: flex;
-  gap: 31px;
+  gap: 1.95rem;
 }
 
 /**************
@@ -171,10 +176,10 @@ MAIN BLOCK
 **************/
 
 .main-content-mainblock p {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 900;
   letter-spacing: 1px;
-  margin-bottom: 25px;
+  margin-bottom: 1.563rem;
   color: #ed7839;
 }
 
@@ -190,13 +195,13 @@ SIDE BLOCK
 .button-section {
   display: flex;
   justify-content: flex-end;
-  gap: 5px;
+  gap: 0.32rem;
 }
 
 .button-section button {
   display: flex;
-  font-size: 16px;
-  padding: 6px 12px;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
   background: #ed7839;
   color: #fff;
   border: none;
@@ -213,8 +218,11 @@ SIDE BLOCK
 
 .sideblock-question {
   color: #ed7839;
+  font-size: 0.85rem;
   font-weight: 500;
-  margin: 12px;
+  letter-spacing: 0.4px;
+  margin: 0.8rem auto;
+  margin-left: 1.2rem;
 }
 
 .sideblock-details {
@@ -223,27 +231,27 @@ SIDE BLOCK
 }
 
 .sideblock-details h2 {
-  font-size: 20px;
-  padding: 11px 15px;
+  font-size: 1.25rem;
+  padding: 0.69rem 0.94rem;
   background: #fdf1eb;
 }
 
 .sideblock-details-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 15px;
+  gap: 1.25rem;
+  margin: 0.94rem;
 }
 
 .sideblock-details-first p {
   font-family: "Quicksand", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
 .sideblock-details-first strong {
   font-family: "Quicksand", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -254,17 +262,17 @@ SIDE BLOCK
 
 .sideblock-details-second p {
   font-family: "Quicksand", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
 .sideblock-details-third {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .sideblock-details-third p {
   font-family: "Quicksand", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.25;
 }
 
@@ -274,22 +282,23 @@ SUMMARY SECTION
 
 .summary {
   border: 1px solid #ececec;
-  border-radius: 3px;
-  margin-bottom: 30px;
+  border-radius: 0.19rem;
+  margin-bottom: 1.875rem;
 }
 
 .summary h3 {
-  font-size: 20px;
-  padding: 10px 15px;
+  font-size: 1.25rem;
+  padding: 0.625rem 0.94rem;
   background: #fdf1eb;
 }
 
 .summary-container {
-  margin: 15px;
+  margin: 0.94rem;
 }
 
 .summary-container p {
   font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
   letter-spacing: 0.5px;
   font-weight: 400;
   line-height: 1.5;
@@ -297,6 +306,7 @@ SUMMARY SECTION
 
 .summary-container a {
   font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
   font-weight: 700;
   color: #ed7839;
   text-decoration: none;
@@ -308,13 +318,13 @@ DISCUSSIONS SECTION
 
 .discussions {
   border: 1px solid #ececec;
-  border-radius: 3px;
-  margin-bottom: 50px;
+  border-radius: 0.19rem;
+  margin-bottom: 3.125rem;
 }
 
 .discussions h3 {
-  font-size: 20px;
-  padding: 10px 15px;
+  font-size: 1.25rem;
+  padding: 0.625rem 0.94rem;
   background: #fdf1eb;
 }
 
@@ -323,21 +333,21 @@ DISCUSSIONS SECTION
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 650px;
+  max-width: 63.12rem;
   margin: 0 auto;
 }
 
 .share-your-questions h4 {
-  margin-top: 15px;
-  font-size: 18px;
+  margin-top: 0.94rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #ed7839;
 }
 
 .icon-box {
-  margin: 30px 0;
+  margin: 1.875rem 0;
   display: flex;
-  gap: 50px;
+  gap: 3.125rem;
 }
 
 .question-text {
@@ -348,13 +358,14 @@ DISCUSSIONS SECTION
 
 .question-text p {
   font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
 }
 
 .create-topic-button {
   display: flex;
   align-items: center;
-  padding: 7px 13px;
-  margin: 15px 0;
+  padding: 0.44rem 0.82rem;
+  margin: 0.94rem 0;
 
   border-radius: 4px;
   border: none;
@@ -368,6 +379,7 @@ DISCUSSIONS SECTION
 .create-topic-button span {
   color: #fff;
   font-family: "Quicksand", sans-serif;
+  font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -382,24 +394,23 @@ DISCUSSIONS BLOCK
 
 .float-line {
   border: 1px solid #e7e7e7;
-  margin: -32px 15px 17px;
+  margin: -2rem 0.94rem 1.07rem;
   z-index: -1;
 }
 
 .discussion-block {
   border: 1px solid #e7e7e7;
   border-radius: 4px;
-  margin: 32px 15px 17px;
-  box-shadow: 0px 0px 8px 0px #0000001c;
+  margin: 2rem 0.94rem 1.07rem;
+  box-shadow: 0rem 0rem 0.5rem 0rem #0000001c;
 }
 
 .discussion-block-container {
-  margin: 18px 23px 9px;
+  margin: 1.125rem 1.44rem 0.57rem;
 }
 
 .discussion-block-container h4 {
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
   font-weight: 700;
   color: #ed7839;
 }
@@ -407,22 +418,23 @@ DISCUSSIONS BLOCK
 .discussion-block-container h5 {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #5c5c5c;
-  margin-top: 3px;
+  margin-top: 0.19rem;
 }
 
 .discussion-block-container p {
   font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 6px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.375rem;
 }
 
 .discussion-block-options {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 0.94rem;
 }
 
 .discussion-block-options p {
@@ -435,12 +447,12 @@ RESPONSE BLOCK
 
 .response-container {
   border-top: 1px solid #e7e7e7;
-  padding: 18px 23px 35px;
+  padding: 1.125rem 1.44rem 2.2rem;
 }
 
 .response-container h4 {
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   color: #ed7839;
 }
@@ -448,27 +460,28 @@ RESPONSE BLOCK
 .response-container h5 {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .response-container p {
   font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
 .response-container p + p {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .response-head {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .badge {
   display: flex;
-  gap: 13px;
+  gap: 0.82rem;
 }
 
 .badge p {
@@ -486,7 +499,7 @@ FOOTER IMAGE
 **************/
 
 .footer {
-  margin-left: 14px;
+  margin-left: 0.875rem;
 }
 
 /**************
