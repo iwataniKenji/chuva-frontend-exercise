@@ -16,7 +16,8 @@ SIDEBAR
 **************/
 
 .sidebar {
-  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.089);
+  box-shadow: 0px 0px 10px 0px #0000003d;
+  z-index: 1;
 }
 
 .sidebar-main {
@@ -45,7 +46,7 @@ SIDEBAR
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 24px;
-  font-family: Quicksand;
+  font-family: "Quicksand", sans-serif;
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
@@ -59,6 +60,10 @@ SIDEBAR
 /**************
 NAVIGATION
 **************/
+
+.main {
+  position: 0;
+}
 
 .navigation {
   display: flex;
@@ -81,10 +86,18 @@ NAVIGATION
 }
 
 .navigation-right button {
+  display: flex;
+  align-items: center;
   background: #fdf1eb;
   border: 1px solid rgba(0, 0, 0, 0.089);
-  padding: 2px 4px;
+  padding: 5px 9px;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.navigation-right span {
+  color: #333333;
+  font-family: "Quicksand", sans-serif;
 }
 
 .user-info {
@@ -92,13 +105,45 @@ NAVIGATION
   gap: 4px;
 }
 
-.email {
-  font-size: 12px;
+.user-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.user-info img {
+.welcome {
+  color: #333333;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+}
+
+.email {
+  font-size: 12px;
+  color: #333333;
+  font-family: "Quicksand", sans-serif;
+}
+
+.profile-pic {
+  position: relative;
+}
+
+.profile-pic img {
   border-radius: 50%;
   margin-right: 29px;
+  height: 30px;
+}
+
+.notifications {
+  position: absolute;
+  color: #fff;
+  background: #f85959;
+  font-size: 10px;
+  font-weight: 700px;
+  top: 0%;
+  right: 45%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
 }
 
 /**************
@@ -107,6 +152,7 @@ MAINBAR
 
 .mainbar {
   margin: 0 45px;
+  max-width: 1040px;
 }
 
 /**************
@@ -128,8 +174,13 @@ MAIN BLOCK
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #ed7839;
+}
+
+.video {
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 /**************
@@ -152,6 +203,9 @@ SIDE BLOCK
   border-radius: 4px;
   cursor: pointer;
 }
+.button-section img {
+  height: 19px;
+}
 
 .button-section button:hover {
   filter: brightness(0.9);
@@ -160,7 +214,7 @@ SIDE BLOCK
 .sideblock-question {
   color: #ed7839;
   font-weight: 500;
-  margin: 9.75px;
+  margin: 12px;
 }
 
 .sideblock-details {
@@ -183,13 +237,24 @@ SIDE BLOCK
 
 .sideblock-details-first p {
   font-family: "Quicksand", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
+}
+
+.sideblock-details-first strong {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.sideblock-details-first span {
+  font-family: "Quicksand", sans-serif;
 }
 
 .sideblock-details-second p {
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -199,7 +264,7 @@ SIDE BLOCK
 
 .sideblock-details-third p {
   font-family: "Quicksand", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.25;
 }
 
@@ -225,6 +290,9 @@ SUMMARY SECTION
 
 .summary-container p {
   font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .summary-container a {
@@ -272,6 +340,12 @@ DISCUSSIONS SECTION
   gap: 50px;
 }
 
+.question-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .question-text p {
   font-family: "Quicksand", sans-serif;
 }
@@ -306,14 +380,21 @@ DISCUSSIONS SECTION
 DISCUSSIONS BLOCK
 **************/
 
+.float-line {
+  border: 1px solid #e7e7e7;
+  margin: -32px 15px 17px;
+  z-index: -1;
+}
+
 .discussion-block {
   border: 1px solid #e7e7e7;
   border-radius: 4px;
-  margin: 0 15px 17px;
+  margin: 32px 15px 17px;
+  box-shadow: 0px 0px 8px 0px #0000001c;
 }
 
 .discussion-block-container {
-  margin: 18px 23px;
+  margin: 18px 23px 9px;
 }
 
 .discussion-block-container h4 {
@@ -327,11 +408,15 @@ DISCUSSIONS BLOCK
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 12px;
+  color: #5c5c5c;
+  margin-top: 3px;
 }
 
 .discussion-block-container p {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 6px;
 }
 
 .discussion-block-options {
@@ -340,12 +425,16 @@ DISCUSSIONS BLOCK
   gap: 15px;
 }
 
+.discussion-block-options p {
+  color: #757575;
+}
+
 /**************
 RESPONSE BLOCK
 **************/
 
 .response-container {
-  border-top: 1px solid #E7E7E7;
+  border-top: 1px solid #e7e7e7;
   padding: 18px 23px 35px;
 }
 
@@ -367,9 +456,14 @@ RESPONSE BLOCK
   font-weight: 400;
 }
 
+.response-container p + p {
+  margin-top: 20px;
+}
+
 .response-head {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .badge {
@@ -384,7 +478,7 @@ RESPONSE BLOCK
 }
 
 .author-background {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 /**************
