@@ -1,14 +1,29 @@
+:root {
+  --main-orange: #ed7839;
+  --notification: #f85959;
+  --font: #725c5c;
+  --background: #fdf1eb;
+  --gray-900: #333333;
+  --gray-700: #5c5c5c;
+  --input-background: #757575;
+  --border-main: #cccccc;
+  --border-secondary: #e7e7e7;
+  --border-tertiary: #ececec;
+  --author-background: #f8f8f8;
+  --white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  color: #725c5c;
-  font-size: 1rem;
 }
 
-.fullpage {
+body {
+  max-width: 86rem;
   display: flex;
+  font-family: "Roboto", sans-serif;
+  color: var(--font);
 }
 
 /**************
@@ -16,6 +31,7 @@ SIDEBAR
 **************/
 
 .sidebar {
+  max-width: 13.75rem;
   box-shadow: 0rem 0rem 0.625rem 0rem #0000003d;
   z-index: 1;
 }
@@ -27,7 +43,7 @@ SIDEBAR
 }
 
 .sidebar-main p {
-  color: #fff;
+  color: var(--white);
   font-size: 1.875rem;
   font-weight: 700;
   background-image: linear-gradient(
@@ -35,6 +51,10 @@ SIDEBAR
     rgba(238, 122, 58, 1)
   );
   padding: 0.97rem 1.51rem;
+}
+
+.sidebar-main img {
+  width: 13.75rem;
 }
 
 .sidebar-options {
@@ -47,6 +67,7 @@ SIDEBAR
   padding-bottom: 0.44rem;
   padding-left: 1.5rem;
   font-family: "Quicksand", sans-serif;
+  color: var(--font);
   font-size: 0.94rem;
   font-weight: 500;
   text-decoration: none;
@@ -55,7 +76,7 @@ SIDEBAR
 }
 
 .sidebar-options a:hover {
-  background: #fdf1eb;
+  background: var(--background);
 }
 
 /**************
@@ -63,15 +84,16 @@ NAVIGATION
 **************/
 
 .main {
+  max-width: 71rem;
   position: 0;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
-  background: #fdf1eb;
-  padding: 0.22rem 0;
-  padding-left: 2.25rem;
+  background: var(--background);
+  max-width: 71rem;
+  padding: 0.22rem 2.25rem;
 }
 
 .navigation-left h3 {
@@ -93,15 +115,19 @@ NAVIGATION
 .navigation-right button {
   display: flex;
   align-items: center;
-  background: #fdf1eb;
+  background: var(--background);
   border: 1px solid rgba(0, 0, 0, 0.089);
   padding: 0.32rem 0.57rem;
   border-radius: 0.19rem;
   cursor: pointer;
 }
 
+.globe-icon {
+  height: 1.19rem;
+}
+
 .navigation-right span {
-  color: #333333;
+  color: var(--gray-900);
   font-family: "Quicksand", sans-serif;
   font-size: 0.875rem;
 }
@@ -118,47 +144,39 @@ NAVIGATION
 }
 
 .welcome {
-  color: #333333;
+  color: var(--gray-900);
   font-weight: 400;
   font-family: "Quicksand", sans-serif;
 }
 
 .email {
   font-size: 0.75rem;
-  color: #333333;
+  color: var(--gray-900);
   font-family: "Quicksand", sans-serif;
 }
 
 .profile-pic {
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
 .profile-pic img {
   border-radius: 50%;
-  margin-right: 1.82rem;
   height: 1.875rem;
 }
 
 .notifications {
   position: absolute;
-  color: #fff;
-  background: #f85959;
+  color: var(--white);
+  background: var(--notification);
   font-size: 0.625rem;
   font-weight: 700;
   top: 0%;
-  right: 45%;
+  right: -10%;
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
-}
-
-/**************
-MAINBAR
-**************/
-
-.mainbar {
-  margin: 0 2.8rem;
-  max-width: 65rem;
 }
 
 /**************
@@ -166,8 +184,8 @@ MAIN CONTENT
 **************/
 
 .main-content {
-  margin-top: 1.25rem;
-  margin-bottom: 1.875rem;
+  margin: 1.25rem 2.8rem 1.875rem;
+  max-width: 71rem;
   display: flex;
   gap: 1.95rem;
 }
@@ -181,12 +199,26 @@ MAIN BLOCK
   font-weight: 900;
   letter-spacing: 1px;
   margin-bottom: 1.563rem;
-  color: #ed7839;
+  color: var(--main-orange);
 }
 
 .video {
   border-radius: 4px;
   overflow: hidden;
+
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin: 0 auto;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /**************
@@ -199,20 +231,20 @@ SIDE BLOCK
   gap: 0.32rem;
 }
 
+.button-section img {
+  height: 1.19rem;
+}
+
 .button-section button {
   display: flex;
   font-size: 1rem;
   padding: 0.375rem 0.75rem;
-  background: #ed7839;
-  color: #fff;
+  background: var(--main-orange);
+  color: var(--white);
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: filter 0.3s;
-}
-
-.button-section img {
-  height: 19px;
 }
 
 .button-section button:hover {
@@ -220,23 +252,23 @@ SIDE BLOCK
 }
 
 .sideblock-question {
-  color: #ed7839;
+  color: var(--main-orange);
   font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.4px;
-  margin: 0.8rem auto;
+  margin: 0.8rem 0rem;
   margin-left: 1.2rem;
 }
 
 .sideblock-details {
-  border: 1px solid #ececec;
+  border: 1px solid var(--border-tertiary);
   border-radius: 3px;
 }
 
 .sideblock-details h2 {
   font-size: 1.25rem;
   padding: 0.69rem 0.94rem;
-  background: #fdf1eb;
+  background: var(--background);
 }
 
 .sideblock-details-container {
@@ -284,15 +316,16 @@ SUMMARY SECTION
 **************/
 
 .summary {
-  border: 1px solid #ececec;
+  max-width: 71rem;
+  border: 1px solid var(--border-tertiary);
   border-radius: 0.19rem;
-  margin-bottom: 1.875rem;
+  margin: 0 2.8rem 1.875rem;
 }
 
 .summary h3 {
   font-size: 1.25rem;
   padding: 0.625rem 0.94rem;
-  background: #fdf1eb;
+  background: var(--background);
 }
 
 .summary-container {
@@ -312,7 +345,7 @@ SUMMARY SECTION
   font-family: "Quicksand", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
-  color: #ed7839;
+  color: var(--main-orange);
   text-decoration: none;
   cursor: pointer;
 }
@@ -330,15 +363,16 @@ DISCUSSIONS SECTION
 **************/
 
 .discussions {
-  border: 1px solid #ececec;
+  max-width: 71rem;
+  border: 1px solid var(--border-tertiary);
   border-radius: 0.19rem;
-  margin-bottom: 3.125rem;
+  margin: 0 2.8rem 3.125rem;
 }
 
 .discussions h3 {
   font-size: 1.25rem;
   padding: 0.625rem 0.94rem;
-  background: #fdf1eb;
+  background: var(--background);
 }
 
 .share-your-questions {
@@ -346,7 +380,6 @@ DISCUSSIONS SECTION
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 63.12rem;
   margin: 0 auto;
 }
 
@@ -354,7 +387,7 @@ DISCUSSIONS SECTION
   margin-top: 0.94rem;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #ed7839;
+  color: var(--main-orange);
 }
 
 .icon-box {
@@ -390,8 +423,12 @@ DISCUSSIONS SECTION
   transition: filter 0.3s;
 }
 
+.orange-button img {
+  height: 1.06rem;
+}
+
 .orange-button span {
-  color: #fff;
+  color: var(--white);
   font-family: "Quicksand", sans-serif;
   font-size: 0.94rem;
   font-weight: 700;
@@ -409,7 +446,7 @@ FORM SECTION
 .form {
   padding: 0.94rem 0rem;
   margin: 0 1.06rem;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid var(--border-secondary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,25 +468,25 @@ FORM SECTION
 
 label {
   font-weight: 700;
-  color: #ed7839;
-  margin: 0.625rem 0px 0.25rem;
+  color: var(--main-orange);
+  margin: 0.625rem 0rem 0.25rem;
 }
 
 input {
   font-family: "Quicksand", sans-serif;
   font-size: 0.875rem;
   padding: 0.625rem auto;
-  padding: 10px 23px;
+  padding: 0.625rem 1.44rem;
   border-radius: 4px;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--border-main);
 }
 
 textarea {
   font-family: "Quicksand", sans-serif;
   font-size: 0.875rem;
-  padding: 10px 23px 10px;
+  padding: 0.625rem 1.44rem 0.625rem;
   border-radius: 4px 4px 0 0;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--border-main);
 }
 
 .submit-line {
@@ -457,12 +494,12 @@ textarea {
 }
 
 .submit-line p {
-  background: #eaf1f2;
+  background: var(--border-tertiary);
   width: 100%;
-  padding: 20px auto;
+  padding: 1.25rem auto;
   margin-bottom: 0px;
-  border-radius: 0 0 0 4px;
-  border: 1px solid #cccccc;
+  border-radius: 0 0 0 0.25rem;
+  border: 1px solid var(--border-main);
   border-top: none;
 }
 
@@ -470,11 +507,11 @@ textarea {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
 
-  padding: 7px 90px;
+  padding: 0.44rem 5.625rem;
   border-radius: 0 0 4px 0;
   border: none;
 
-  color: #fff;
+  color: var(--white);
   background-image: linear-gradient(
     rgba(255, 179, 84, 1),
     rgba(238, 122, 58, 1)
@@ -496,13 +533,13 @@ DISCUSSIONS BLOCK
 **************/
 
 .float-line {
-  border: 1px solid #e7e7e7;
+  border: 1px solid var(--border-secondary);
   margin: -2rem 0.94rem 1.07rem;
   z-index: -1;
 }
 
 .discussion-block {
-  border: 1px solid #e7e7e7;
+  border: 1px solid var(--border-secondary);
   border-radius: 4px;
   margin: 2rem 0.94rem 1.07rem;
   box-shadow: 0rem 0rem 0.5rem 0rem #0000001c;
@@ -515,14 +552,14 @@ DISCUSSIONS BLOCK
 .discussion-block-container h4 {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  color: #ed7839;
+  color: var(--main-orange);
 }
 
 .discussion-block-container h5 {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
-  color: #5c5c5c;
+  color: var(--gray-700);
   margin-top: 0.19rem;
 }
 
@@ -541,7 +578,7 @@ DISCUSSIONS BLOCK
 }
 
 .discussion-block-options p {
-  color: #757575;
+  color: var(--input-background);
 }
 
 .discussion-block-options img {
@@ -553,13 +590,21 @@ DISCUSSIONS BLOCK
   filter: brightness(0.9);
 }
 
+.options-button {
+  height: 1.125rem;
+}
+
+.like-button {
+  height: 1.56rem;
+}
+
 /**************
 RESPONSE BLOCK
 **************/
 
 .response-container {
   display: block;
-  border-top: 1px solid #e7e7e7;
+  border-top: 1px solid var(--border-secondary);
   padding: 1.125rem 1.44rem 2.2rem;
 }
 
@@ -567,7 +612,7 @@ RESPONSE BLOCK
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #ed7839;
+  color: var(--main-orange);
 }
 
 .response-container h5 {
@@ -600,11 +645,11 @@ RESPONSE BLOCK
 .badge p {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  color: #ed7839;
+  color: var(--main-orange);
 }
 
 .author-background {
-  background: #f8f8f8;
+  background: var(--author-background);
 }
 
 .hidden-response {
@@ -617,6 +662,10 @@ FOOTER IMAGE
 
 .footer {
   margin-left: 0.875rem;
+}
+
+.footer img {
+  width: 67.87rem;
 }
 
 /**************
