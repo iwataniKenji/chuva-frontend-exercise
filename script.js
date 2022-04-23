@@ -73,7 +73,7 @@ formButton.addEventListener("click", function (e) {
   const title = titleInput.value;
   const comment = commentInput.value;
 
-  if (!title || !comment) return;
+  if (title.trim() === "" || comment.trim() === "") return;
 
   titleInput.value = "";
   commentInput.value = "";
@@ -111,7 +111,7 @@ formButton.addEventListener("click", function (e) {
   topicForm.classList.add("hide-section");
 
   return;
-}); 
+});
 
 // TELA DE SUBMIT
 const createOtherTopicButton = document.querySelector(".other-topics-button");
