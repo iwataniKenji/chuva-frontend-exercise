@@ -10,7 +10,7 @@
 </p>
 
 <h4 align="center">
-   🚧 Chuva Frontend Project in progress... 🚧
+   ✔️ Chuva Frontend Project finished ✔️
 </h4>
 
 <H2 id="about">📙 About</H2>
@@ -34,7 +34,6 @@
 - [x] Selected tab functionality
 - [x] Form section
 - [x] Hidden content expansion
-- [ ] Totally responsive layout
 
 ---
 
