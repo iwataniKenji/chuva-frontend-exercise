@@ -15,8 +15,14 @@
 
 <H2 id="about">📙 About</H2>
 
-<p>Layout developed by <a href="https://github.com/galoa">Galoá</a> and made by <a href="https://www.linkedin.com/in/kleverson-kenji-iwatani/" target="_blank">Kenji Iwatani</a></p>
+<p>Layout developed by <a href="https://github.com/galoa">Galoá</a>, application hosted by <a href="https://www.netlify.com/">Netlify</a> and production made by <a href="https://www.linkedin.com/in/kleverson-kenji-iwatani/" target="_blank">Kenji Iwatani</a></p>
 <p>Video used: <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw">Me at the zoo (first video posted on Youtube)</a></p>
+
+<p>
+    <h3><a href="https://chuva-frontend-kenji.netlify.app/">Check website &rarr;</a></h3>
+</p>
+
+
 
 ---
 
@@ -42,3 +48,4 @@
 - [x] HTML
 - [x] CSS
 - [x] JavaScript
+- [x] Netlify
